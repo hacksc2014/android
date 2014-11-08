@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">hacksc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    
+    <string-array name="listItems">
+        <item>item1</item>
+        <item>item2</item>
+    </string-array>
+
+</resources>
