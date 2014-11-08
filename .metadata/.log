@@ -1160,3 +1160,14 @@ java.lang.IllegalStateException: Workbench has not been created yet.
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2014-11-08 00:39:07.285
 !MESSAGE Failed to load properties file for project 'HackSC_App'
+
+!ENTRY org.eclipse.ui.ide 4 4 2014-11-08 00:40:47.312
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2014-11-08 00:40:47.312
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2014-11-08 00:40:47.312
+!MESSAGE The project description file (.project) for 'HackSC_App' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.ui 2 2 2014-11-08 00:40:47.335
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
