@@ -81,19 +81,19 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
     		iv.setVisibility(View.VISIBLE);
     		
     		if (deltaX > deltaY) {
-    			/* if (deltaX > 14.0f){
+    			if (deltaX > 14.0f){
     				mp.setVolume(1.0f, 1.0f);
     			}else{
     				mp.setVolume(0.2f, 0.2f);
-    			} */
+    			}
     			//iv.setImageResource(R.drawable.ic_launcher);
     			mp.start();
     		} else if (deltaY > deltaX) {
-    			/* if (deltaY > 14.0f){
+    			if (deltaY > 14.0f){
     				mp.setVolume(1.0f, 1.0f);
     			}else{
     				mp.setVolume(0.2f, 0.2f);
-    			} */
+    			}
     			//iv.setImageResource(R.drawable.ic_launcher);
     			mp.start();
     		} else {

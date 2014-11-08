@@ -1203,7 +1203,9 @@ containing a value of this type.
         public static final int main=0x7f0d0000;
     }
     public static final class raw {
-        public static final int hi_hat=0x7f050000;
+        public static final int clave=0x7f050000;
+        public static final int hi_hat=0x7f050001;
+        public static final int snare_drum=0x7f050002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

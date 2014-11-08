@@ -21,7 +21,7 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
 	private Sensor mAccelerometer;
 	private final float NOISE = (float)8.0;
 	private MediaPlayer mp, mp2;
-	private int sensor_delay = 50000;
+	private int sensor_delay = 100000;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,20 +81,11 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
     		iv.setVisibility(View.VISIBLE);
     		
     		if (deltaX > deltaY) {
-    			/* if (deltaX > 14.0f){
-    				mp.setVolume(1.0f, 1.0f);
-    			}else{
-    				mp.setVolume(0.2f, 0.2f);
-    			} */
-    			//iv.setImageResource(R.drawable.ic_launcher);
+    			if (deltaX >)
+    			iv.setImageResource(R.drawable.ic_launcher);
     			mp.start();
     		} else if (deltaY > deltaX) {
-    			/* if (deltaY > 14.0f){
-    				mp.setVolume(1.0f, 1.0f);
-    			}else{
-    				mp.setVolume(0.2f, 0.2f);
-    			} */
-    			//iv.setImageResource(R.drawable.ic_launcher);
+    			iv.setImageResource(R.drawable.ic_launcher);
     			mp.start();
     		} else {
     			iv.setVisibility(View.INVISIBLE);
