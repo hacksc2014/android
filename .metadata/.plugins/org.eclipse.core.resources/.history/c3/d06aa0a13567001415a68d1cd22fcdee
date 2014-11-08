@@ -21,7 +21,7 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
 	private Sensor mAccelerometer;
 	private final float NOISE = (float)8.0;
 	private MediaPlayer mp;
-	private int sensor_delay = 50000;
+	private int sensor_delay = 100000;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

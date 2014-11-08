@@ -21,7 +21,6 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
 	private Sensor mAccelerometer;
 	private final float NOISE = (float)8.0;
 	private MediaPlayer mp;
-	private int sensor_delay = 50000;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,13 +28,13 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
         mInitialized = false;
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        mSensorManager.registerListener(this, mAccelerometer, sensor_delay);
+        mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         mp = MediaPlayer.create(getBaseContext(), R.raw.hi_hat);
     }
     @Override
     protected void onResume(){
     	super.onResume();
-        mSensorManager.registerListener(this, mAccelerometer, sensor_delay);
+        mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
 
     }
     @Override
